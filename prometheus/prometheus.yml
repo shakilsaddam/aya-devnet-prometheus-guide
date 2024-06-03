@@ -15,4 +15,4 @@ scrape_configs:
   - job_name: 'wmt-validator'
     scrape_interval: 5s
     static_configs:
-      - targets: ['grafana:9615']  # Use your host's IP address here
+      - targets: ['host.docker.internal:9615']  # Use your host's IP address here
