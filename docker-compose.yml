@@ -13,7 +13,7 @@ services:
     container_name: grafana
     network_mode: host
     environment:
-      - GF_SECURITY_ADMIN_PASSWORD=admin # Set your desired password
+      - GF_SECURITY_ADMIN_PASSWORD=admin123 # Set your desired password
     volumes:
       - grafana-storage:/var/lib/grafana
       - ${PERSISTENCE}/grafana/:/etc/grafana:ro
