@@ -67,6 +67,7 @@
         "description": "What your node sees as the highest block (NOT finalized)",
         "fieldConfig": {
           "defaults": {
+            "custom": {},
             "mappings": [],
             "thresholds": {
               "mode": "absolute",
