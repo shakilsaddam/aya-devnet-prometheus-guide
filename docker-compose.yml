@@ -16,7 +16,7 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=admin123 # Set your desired password
     volumes:
       - grafana-storage:/var/lib/grafana
-      - ${PERSISTENCE}/grafana/:/etc/grafana:ro
+      - grafana-storage/grafana/:/etc/grafana:ro
     ports:
       - "3000:3000"
 
