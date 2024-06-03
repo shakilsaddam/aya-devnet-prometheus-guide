@@ -15,8 +15,8 @@ services:
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin123 # Set your desired password
     volumes:
-      - grafana-storage:/var/lib/grafana
-      - grafana-storage/grafana/:/etc/grafana:ro
+      - grafana-data:/var/lib/grafana
+      - ./grafana/:/etc/grafana:ro
     ports:
       - "3000:3000"
 
@@ -35,4 +35,4 @@ services:
       - '--collector.filesystem.ignored-mount-points="^/(sys|proc|dev|host|etc)($$|/)"'
 
 volumes:
-  grafana-storage:
+  grafana-data:
